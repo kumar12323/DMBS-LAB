@@ -1,0 +1,197 @@
+<html>
+
+<heading>
+<title>MOVIES</title>
+<style>
+div {
+  border: 5px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: skyblue;
+  padding: 5px 5px 5px;
+}
+
+.Moviepics{
+  display: inline-block;
+  padding: 0.5rem;
+  }
+  
+  .Trailers{
+  display: inline-block;
+  padding: 1rem;
+  }
+</style>
+
+<style>
+body{
+background-image: url('spider man.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+
+<style>
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+video{
+  position:absolute;
+  object-fit:cover;
+  width:70%;
+  height:60%;
+  transition:all 200ms linear;
+  z-index:11;
+}
+.slide1{
+  opacity:1;
+}
+.slide2{
+  opacity:0;
+}
+.slide3{
+  opacity:1;
+}
+
+.wrapper{
+  width:71%;
+  height:62%;
+  border: 5px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: skyblue;
+  padding: 5px 5px 5px;
+}
+
+</style>
+</heading>
+
+<body>
+
+
+<font face="Kristen ITC" size="20px" color="white">TELEHUB</font>
+
+<button class="button" onclick="window.location.href='Homepage.html';">HOME</button>
+<button class="button" onclick="window.location.href='Movies.html';">MOVIES</button>
+<button class="button" onclick="window.location.href='TV SHOWS.html';">TV SHOWS</button>
+<button class="button" onclick="window.location.href='GAMES.html';">GAMES</button>
+<button class="button" onclick="window.location.href='Music.html';">MUSIC</button>
+<button class="button" onclick="window.location.href='user_profile.html';">USER PROFILE</button>
+<input type="text" placeholder="Search..">
+<h1 style="color:white">MOVIES</h1>
+
+<div class="wrapper">
+  <video src="" class="slide1" id="slide1" autoplay muted></video>
+  <video src="" class="slide2" id="slide2" autoplay muted></video>
+  <video src="" class="slide3" id="slide3" autoplay muted></video>
+</div>
+<script >
+  var slide1= document.getElementById('slide1');
+  var slide2= document.getElementById('slide2');
+  var slide3= document.getElementById('slide3');
+  
+  slide1.onended=function(){
+    slide2.play();
+    slide1.style.opacity=0;
+    slide2.style.opacity=1;
+  }
+  slide2.onended=function(){
+    slide3.play();
+    slide2.style.opacity=0;
+    slide3.style.opacity=1;
+  }
+  slide3.onended=function(){
+    slide1.play();
+    slide3.style.opacity=0;
+    slide1.style.opacity=1;
+  }
+  </script>
+<br><br>
+<h1 style="color:gold">Action Movies</h1>
+<div class="Moviepics">
+<p>
+<img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\movies images\movies-spiderman no way home.jpg" width="188" height="266" alt="spiderman no way home" usemap="#spiderman ">
+</p>
+<p style="text-align:center;"><b>Spiderman No Way Home </b></p>
+<map name="spiderman no way home">
+<area shape="rect" coords="0,0,188,266" alt="Asia" href="">
+</map>
+</div>
+
+<div class="Moviepics">
+  <p>
+  <img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\movies images\movies-red notice.jpg" width="188" height="266" alt="red notice" usemap="#rednotice">
+  </p>
+  <p style="text-align:center;"><b>Red Notice</b></p>
+  <map name="red notice">
+  <area shape="rect" coords="0,0,188,266" alt="Asia" href="">
+  </map>
+  </div>
+
+<div class="Moviepics">
+<p>
+<img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\movies images\movies-morbius.jpg" width="188" height="266" alt="Morbius" usemap="#morbius">
+</p>
+<p style="text-align:center;"><b>Morbius</b></p>
+<map name="morbius">
+<area shape="rect" coords="0,0,188,266" alt="Asia" href="">
+</map>
+</div>
+
+<div class="Moviepics">
+<p>
+<img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\movies images\movies-war for the planet of the apes.jpg" width="188" height="266" alt="Planet of the apes" usemap="#planet of the apes">
+</p>
+<p style="text-align:center;"><b>War for the Planet of the Apes</b></p>
+<map name="planet of the apes">
+<area shape="rect" coords="0,0,188,266" alt="Asia" href="">
+</map>
+</div>
+
+<div class="Moviepics">
+<p>
+<img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\movies images\movies-tenet.jpg" width="188" height="266" alt="tenet" usemap="#tenet">
+</p>
+<p style="text-align:center;"><b>Tenet</b></p>
+<map name="tenet">
+<area shape="rect" coords="0,0,188,266" alt="Asia" href="">
+</map>
+</div>
+
+<h1 style="color:gold">Romantic Comedy Movies</h1>
+<div class="Moviepics">
+  <p>
+  <img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\movies images\movies-stars fell on alabama.jpg" width="188" height="266" alt="stars fell on alabama" usemap="#starsfellonalabama">
+  </p>
+  <p style="text-align:center;"><b>Stars Fell on Alabama</b></p>
+  <map name="stars fell on alabama">
+  <area shape="rect" coords="0,0,188,266" alt="Asia" href="">
+  </map>
+  </div>
+
+  <div class="Moviepics">
+    <p>
+    <img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\movies images\movies-cinderella.jpg" width="188" height="266" alt="cinerella" usemap="#cinderella">
+    </p>
+    <p style="text-align:center;"><b>Cinderella</b></p>
+    <map name="cinderella">
+    <area shape="rect" coords="0,0,188,266" alt="Asia" href="">
+    </map>
+    </div>
+
+</body>
+</html>

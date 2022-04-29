@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>FEEDBACK | TELEHUB</title>
+        <link rel="icon" type="image/x-icon" href="evento.ico">
+
+        <link rel="stylesheet" href="eventstyle.css">
+        <link rel="stylesheet" href="eventcontact.css">
+        <!-- for social media icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    
+
+    <body>
+        
+        <nav style="display: flex;">
+            <ul class="menu-ul">
+                <li><img src="telehub_logo.png" alt="picture of the logo" width="90" height="90" onclick="window.location.href='Homepage.html'" /></li>
+    
+    
+                <li><a href="Login Page.html" style="color: white;">Login</a></li>
+                <!-- <li><a href="contactus1.html" style="color: white;">Contact</a></li> -->
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Contact</button>
+                        <div class="dropdown-content">
+                          <a href="Contactus.html">Contact Us</a>
+                          <a href="Aboutus.html">About Us</a>
+                          <a href="Feedback.html">Feedback</a> 
+                        </div>
+                    </div>
+    
+                </li>
+    
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Services</button>
+                        <div class="dropdown-content">
+                            <a href="Movies.html">Rent and Purchase Movies</a>
+                            <a href="TV SHOWS.html">Rent and Purchase TV Shows</a>
+                            <a href="GAMES.html">Rent and Purchase Games</a>
+                            <a href="Music.html">Rent and Purchase Music</a>
+                        </div>
+                    </div>
+    
+                </li>
+    
+                <li><a href="Homepage.html" style="color: white;">Home</a></li>
+            </ul>
+        </nav>
+
+        <br><br>
+
+        <div class="form-container" id = "feedbackconnec">
+            <div class="form-border">
+                <form id="form" class="form">
+                    <!-- <label for="text">Name:</label><input type="text"  name="name of person" > 
+                    <br>
+                    <label for="email">Email ID:</label><input type="email" name="email of person">
+                    <br>
+                    <label for="tel">Phone number:</label><input type="tel" name="phnum of person">
+                    <br>
+                    <label for="option">About:</label> -->
+
+                    <div class="form-element">
+                        <input type="text"  name="name of person" placeholder="Name"  id="username"> 
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <br>
+                        <small>Error message</small>
+                    </div>
+
+                    <br>
+
+                    <div class="form-element" >
+                        <input type="email" name="email of person" placeholder="example@gmail.com" id="email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <br>
+                        <small>Error message</small>
+
+                    </div>
+                    <br>
+
+                    <div class="form-element">
+                        <input type="tel" name="phnum of person" placeholder="999999999" id="phonenum">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <br>
+                        <small>Error message</small>
+
+                    </div>
+                    <br>
+                    
+
+                    <!-- Name: &emsp;&emsp;&emsp;&emsp; <input type="text"  name="name of person" >    <br><br>
+                    Email ID: &emsp;&emsp;&emsp;<input type="email" name="email of person"> <br><br>
+                    Phone number:&emsp;<input type="tel" name="phnum of person"> <br><br>
+                    &ensp;About:    &emsp;&emsp;&ensp;&ensp; -->
+
+                    <label for="option">About:</label>
+                    <select width = 100px id="about">
+                    <option> Venue </option>
+                    <option> Pricing and Management </option>
+                    <option> Artists </option>
+                    <option> Catering </option>
+                    <option> Services </option>
+                    </select>
+        
+                    <br><br>
+        
+                    <h3 style="font-weight: normal;">Feedback/Suggestion:</h3>
+        
+                    <textarea rows="5" cols="30" name="feedback" id="feedback"></textarea>
+        
+                    <br><br>
+        
+                    <button class="allbutton" type="submit" id="btn">Submit</button>
+                    <button class="allbutton" type="reset" onClick="window.location.reload(true)">Reset</button>
+        
+                    <h2>Displaying the data:</h2>
+                    <div id="msg">
+                        <pre></pre>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+            
+    
+
+        <script src="feedbacF_validation.js"></script>
+
+        <footer>
+
+            <div class="share">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://in.linkedin.com/" class="fab fa-linkedin"></a>
+                <a href="https://in.pinterest.com/" class="fab fa-pinterest"></a>
+            </div>
+                
+        </footer>
+
+
+    </body>
+</html>

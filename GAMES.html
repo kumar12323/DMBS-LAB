@@ -1,0 +1,181 @@
+<html>
+<title>GAMES</title>
+
+<style>
+div {
+  border: 5px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: skyblue;
+  padding: 5px 5px 5px;
+}
+</style>
+
+<style>
+body{
+background-image: url('forzawallpaper.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.GamePics{
+display: inline-block;
+padding: 0.5rem;
+}
+
+.Trailers{
+display: inline-block;
+padding: 1rem;
+}
+
+</style>
+
+<style>
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+
+<style>
+video{
+  position:absolute;
+  object-fit:cover;
+  width:70%;
+  height:60%;
+  transition:all 200ms linear;
+  z-index:11;
+}
+.slide1{
+  opacity:1;
+}
+.slide2{
+  opacity:0;
+}
+.slide3{
+  opacity:1;
+}
+
+.wrapper{
+  width:71%;
+  height:62%;
+}
+</style>
+
+<script>
+function notavailable(form){
+      alert(form.check1.checked);
+}
+</script>
+</heading>
+
+<font face="Kristen ITC" size="20px" color="white">TELEHUB</font>
+
+<button class="button" onclick="window.location.href='Homepage.html';">HOME</button>
+<button class="button" onclick="window.location.href='Movies.html';">MOVIES</button>
+<button class="button" onclick="window.location.href='TV SHOWS.html';">TV SHOWS</button>
+<button class="button" onclick="window.location.href='GAMES.html';">GAMES</button>
+<button class="button" onclick="window.location.href='Music.html';">MUSIC</button>
+<button class="button" onclick="window.location.href='user_profile.html';">USER PROFILE</button>
+<input type="text" placeholder="Search..">
+
+<h1 style="color:white">GAMES</h1>
+<div class="wrapper">
+  <video src="Assassin's Creed Valhalla.mp4" class="slide1" id="slide1" autoplay muted></video>
+  <video src="Forza Horizon 5.mp4" class="slide2" id="slide2" autoplay muted></video>
+  <video src="Valorant.mp4" class="slide3" id="slide3" autoplay muted></video>
+</div>
+
+
+<script >
+var slide1= document.getElementById('slide1');
+var slide2= document.getElementById('slide2');
+var slide3= document.getElementById('slide3');
+
+slide1.onended=function(){
+  slide2.play();
+  slide1.style.opacity=0;
+  slide2.style.opacity=1;
+}
+slide2.onended=function(){
+  slide3.play();
+  slide2.style.opacity=0;
+  slide3.style.opacity=1;
+}
+slide3.onended=function(){
+  slide1.play();
+  slide3.style.opacity=0;
+  slide1.style.opacity=1;
+}
+</script>
+<br><br>
+<h1 style="color:gold">Games Available For Download</h1>
+<div class="GamePics">
+<p>
+<img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\games images\nfs.jpg" width="188" height="266" alt="NFS" usemap="#nfs">
+</p>
+<p style="text-align:center;"><b>Need For Speed</b></p>
+<map name="nfs">
+<area shape="rect" coords="0,0,188,266" alt="Asia" >
+</map>
+</div>
+
+<div class="GamePics">
+<p>
+<img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\games images\Assassins_creed.jpg" width="188" height="266" alt="assassinscreed" usemap="#assassins_creed">
+</p>
+<p style="text-align:center;"><b>Assassins Creed</b></p>
+<map name="assassins_creed">
+<area shape="rect" coords="0,0,188,266" alt="Asia" href="https://crotorrents.com/assassins-creed-brotherhood-torrent-pc-download/">
+</map>
+</div>
+
+<div class="GamePics">
+<p>
+<img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\games images\minecraft.jpg" width="188" height="266" alt="mincraft" usemap="#minecraft">
+</p>
+<p style="text-align:center;"><b>Minecraft</b></p>
+<map name="minecraft">
+<area shape="rect" coords="0,0,188,266" alt="Asia" href="https://www.minecraft.net/en-us">
+</map>
+</div>
+
+<div class="GamePics">
+<p>
+<img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\games images\pubg.jpg" width="188" height="266" alt="pubg" usemap="#pubg">
+</p>
+<p style="text-align:center;"><b>Pubg</b></p>
+<map name="pubg">
+<area shape="rect" coords="0,0,188,266" alt="Asia" href="https://play.google.com/store/apps/details?id=com.pubg.imobile">
+</map>
+</div>
+
+<div class="GamePics">
+<p>
+<img src="C:\Users\GUEST_1\OneDrive\Desktop\LAB1(WT)\games images\freefire.jpg" width="188" height="266" alt="freefire" usemap="#freefire">
+</p>
+<p style="text-align:center;"><b>FreeFire</b></p>
+<map name="freefire">
+<area shape="rect" coords="0,0,188,266" alt="Asia" href="https://play.google.com/store/apps/details?id=com.dts.freefireth">
+</map>
+</div>
+
+
+
+<p style="text-align:center;"><b><a href="file:///C:/Users/GUEST_1/OneDrive/Desktop/LAB1(WT)/AboutUs.html">ABOUT US</a></b></p>
+
+
+
+</body></html>
